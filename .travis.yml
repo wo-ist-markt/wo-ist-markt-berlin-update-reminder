@@ -7,4 +7,10 @@ notifications:
   email:
     on_success: never
     on_failure: always
-
+   slack:
+    on_success: never
+    on_failure: always
+    rooms:
+      - secure: "Tm9wd5AsPI+pP4ManjRE4FzJq+3lT3Tn9tOI4G/58hllWc6zffVbuKDOKFa4g/JSoCJjRcwf6PmLw7hiydHYuvtVEZilc+4bM9lZVWIgbzCVrTIvjLXY7prhRw9uSoh3ppGApLWzXwq8P9uLqUp4jAxSRslNTnPTp5f6qyeELjmUsrBIRGCgLWk6188h3mYyUzkyb34/RVIX/NOYUAawyRJ1g2u1SWdSTr3C4aO7Sut786nV0sdXlvDmLY/mSmUqrppgdpB5uLuDwyMCsNcmwGYGRy9/0jlzGF40HBPDsloftfvw3Zdowb7eJNcAsRTEYMeomvyHd0AKyh5iN3pcQrnVu0VyOnDoFpZLw0ttShFwyIO3ZqKqKA6c7Bk3iBm01+4JXEBC0MkMtRCd10t5fjk67NiBpJs0ydReDVBwLKOO9oiGk3wZ4kExzDgOXyC/r/tD1/KRJ9Mx/qXu2OoQVtqNNzHsy9fAxTctFJ7MiS+UUOf+FiAiaegyNHJNpZkk0uAEZs0HAHhdQk+iS2jQuYySHpGXp86pl35nmsrCgrKXI2oSQ/YEFhD/YJiK8HIi1KF4bPD5VlCJ1jfZjPs/PsadlHdkuYCw31nda+1GLOWGNZdWYZkmsaJ0AjDih9lhYdJE6a0O6JS92eegLDhQ06pszt3Sr8hayI4VR8rM7GE="
+    template:
+      - 'Data of Berlin changed: %{build_url}'
