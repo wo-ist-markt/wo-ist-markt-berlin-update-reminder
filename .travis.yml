@@ -1,0 +1,10 @@
+language: shell
+
+script:
+  bash update_reminder.sh
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
