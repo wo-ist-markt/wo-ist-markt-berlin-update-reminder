@@ -1,5 +1,9 @@
 language: shell
-script: bash update_reminder.sh
+script:
+  # Fail if any of these files have warnings
+  - shellcheck *.sh
+  # Run script
+  - bash update_reminder.sh
 notifications:
   email:
     on_success: never
