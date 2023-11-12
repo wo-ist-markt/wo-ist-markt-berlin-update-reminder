@@ -22,7 +22,7 @@ Travis CI is further configured to send Slack messages to the
 [#wo-ist-markt-ci channel][wo-ist-markt-ci-slack].
 
 
-[berlin-market-data-website]: https://daten.berlin.de/datensaetze/wochen-und-tr%C3%B6delm%C3%A4rkte-0
+[berlin-market-data-website]: https://daten.berlin.de/datensaetze/berliner-wochen-und-tr%C3%B6delm%C3%A4rkte
 [travis-ci-website]: https://travis-ci.org
 [wo-ist-markt-ci-slack]: https://openknowledgegermany.slack.com/messages/wo-ist-markt-ci/
 [wo-ist-markt-berlin-json]: https://wo-ist-markt.de/cities/berlin.json
