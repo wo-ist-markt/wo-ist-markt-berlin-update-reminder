@@ -3,12 +3,15 @@
 # Wo ist Markt? Berlin update reminder
 
 A maintenance script for the [Wo ist Markt? project][wo-ist-markt-github]
-to automatically check if the market data for Berlin has changed.
+to automatically check if the market data for Berlin is still available and whether it has changed.
 
 
 ## Project description
 
-The script compares two time stamps with each other. 
+First, the site checks whether the market data for Berlin is still available.
+That is, whether daten.berlin.de as well as its GeoJSON endpoint are still available.
+
+Second, the script compares two time stamps with each other. 
 One is extracted from the [market data website][berlin-market-data-website] 
 of the Berlin data portal. The `Aktualisiert:` date is picked here.
 The other is parsed from the [Berlin market data JSON file][wo-ist-markt-berlin-json] 
