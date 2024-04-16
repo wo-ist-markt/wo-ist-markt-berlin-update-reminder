@@ -56,7 +56,7 @@ function fail_on_error {
 }
 
 function main {
-  BERLIN_HEADER_AND_SITE=$( get_site_and_header https://daten.berlin.de/datensaetze/berliner-wochen-und-tr%C3%B6delm%C3%A4rkte )
+  BERLIN_HEADER_AND_SITE=$( get_site_and_header https://daten.berlin.de/datensaetze/berliner-und-brandenburger-wochen-und-tr%C3%B6delm%C3%A4rkte )
 
   error_on_non_200_http_status_code "daten.berlin.de" "$BERLIN_HEADER_AND_SITE"
 
