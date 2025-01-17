@@ -1,9 +1,12 @@
-language: shell
+dist: jammy
+language: python
+python:
+  - "3.10"
+install:
+  - pip install -r requirements.txt
 script:
-  # Fail if any of these files have warnings
-  - shellcheck *.sh
   # Run script
-  - bash update_reminder.sh
+  - python main.py
 notifications:
   email:
     on_success: never
